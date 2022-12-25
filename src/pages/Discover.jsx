@@ -8,9 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Discover = () => {
         const { data, isFetching, isError } = useGetTopChartsQuery();
-        const dispatch=useDispatch
+
         const {isPlaying, activeSong}=useSelector(state=>state.player)
-        
         if (isFetching) {
                 return <Loader />;
         }
