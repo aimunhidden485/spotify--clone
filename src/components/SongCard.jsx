@@ -13,7 +13,7 @@ const SongCard = ({ song, i , isPlaying, activeSong, data}) => {
          
         };
         
-       console.log(song.images);
+   
         return (
                 <>
                 {
